@@ -1,4 +1,10 @@
 {
+  "redirects": [
+    { "source": "/about", "destination": "/autobiografia", "permanent": true },
+    { "source": "/projects", "destination": "/proyectos", "permanent": true },
+    { "source": "/contact", "destination": "/contacto", "permanent": true },
+    { "source": "/herramientas", "destination": "/experiencia", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)",
