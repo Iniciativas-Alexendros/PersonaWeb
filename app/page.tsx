@@ -8,7 +8,6 @@ import { StackMarquee } from "@/components/stack-marquee";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Inicio",
   description: siteConfig.description,
   alternates: { canonical: "/" },
 };
