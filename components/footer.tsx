@@ -79,14 +79,14 @@ export function Footer() {
 
         {/* Afiliados */}
         <p className="mt-2 text-xs text-muted-foreground">
-          Esta web incluye enlaces de afiliado (ver{" "}
-          <Link
-            href="/experiencia#recomendaciones"
-            className="underline underline-offset-4 decoration-primary/60"
+          Esta web incluye{" "}
+          <a
+            href="#experiencias"
+            className="underline underline-offset-4 decoration-primary/60 hover:decoration-primary"
           >
-            Recomendaciones
-          </Link>
-          ). Si contratas a través de ellos, puedo recibir una comisión sin coste extra para ti.
+            enlaces de afiliado
+          </a>
+          . Si contratas a través de ellos, puedo recibir una comisión sin coste extra para ti.
         </p>
       </div>
     </footer>

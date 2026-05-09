@@ -3,71 +3,137 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Política de cookies",
   description: "Política de cookies de alexendros.me conforme a la Guía AEPD 2023.",
+  alternates: { canonical: "/legal/cookies" },
 };
 
 export default function CookiesPage() {
   return (
     <>
-      <h1>Política de Cookies</h1>
+      <h1>Política de cookies</h1>
 
-      <p>
-        En cumplimiento de la Guía sobre el uso de las cookies publicada por la Agencia Española de
-        Protección de Datos (AEPD) en 2023, y de la Ley 34/2002 de Servicios de la Sociedad de la
-        Información (LSSI-CE), se informa sobre el uso de cookies en{" "}
-        <a href="https://alexendros.me" target="_blank" rel="noopener noreferrer">
-          alexendros.me
-        </a>
-        .
-      </p>
+      {/* BLOQUE 1 — Lo esencial */}
+      <section aria-labelledby="ck-esencial">
+        <h2 id="ck-esencial">Lo esencial</h2>
+        <p>
+          Este sitio <strong>no instala cookies de terceros</strong> ni activa ningún tracker. El
+          único almacenamiento que puede generarse es el técnico del CDN. No hay publicidad, no hay
+          perfiles, no hay remarketing.
+        </p>
+        <p>
+          No verás un banner de aceptación porque no hay cookies que requieran consentimiento previo
+          según la Guía de la AEPD 2023.
+        </p>
+      </section>
 
-      <h2>¿Qué son las cookies?</h2>
-      <p>
-        Las cookies son pequeños archivos de texto que se almacenan en el dispositivo del usuario
-        cuando visita un sitio web. Permiten que el sitio recuerde información sobre la visita, lo
-        que facilita la navegación y mejora la experiencia del usuario.
-      </p>
-      <p>
-        Según la normativa vigente, las cookies que no sean estrictamente necesarias para el
-        funcionamiento del servicio requieren el consentimiento previo e informado del usuario.
-      </p>
+      {/* BLOQUE 2 — Detalle */}
+      <section aria-labelledby="ck-detalle">
+        <h2 id="ck-detalle">Detalle</h2>
 
-      <h2>Uso de cookies en este sitio</h2>
-      <p>
-        <strong className="text-foreground">
-          alexendros.me es un sitio web estático que no instala cookies de ningún tipo en el
-          dispositivo del usuario.
-        </strong>{" "}
-        No se utilizan cookies propias, de terceros, analíticas ni publicitarias. Al no existir
-        cookies, no se requiere mecanismo de consentimiento.
-      </p>
+        <h3>¿Qué es una cookie?</h3>
+        <p>
+          Una cookie es un pequeño archivo de texto que un sitio web almacena en tu dispositivo.
+          Las cookies que no sean estrictamente necesarias para la prestación del servicio requieren
+          consentimiento previo e informado.
+        </p>
 
-      <h2>Derechos del usuario</h2>
-      <p>
-        Aunque este sitio no utiliza cookies, el usuario conserva en todo momento sus derechos
-        conforme a la normativa vigente:
-      </p>
-      <ul>
-        <li>
-          <strong className="text-foreground">Configurar su navegador</strong> para rechazar o
-          eliminar cookies. Consulte la ayuda de su navegador para más información.
-        </li>
-        <li>
-          <strong className="text-foreground">Solicitar información</strong> adicional sobre el
-          tratamiento de sus datos a través de:{" "}
-          <a href="mailto:contacto@alexendros.me">contacto@alexendros.me</a>
-        </li>
-      </ul>
+        <h3>Inventario de cookies</h3>
+        <table className="legal-table">
+          <thead>
+            <tr>
+              <th scope="col">Nombre</th>
+              <th scope="col">Proveedor</th>
+              <th scope="col">Tipo</th>
+              <th scope="col">Finalidad</th>
+              <th scope="col">Duración</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Nombre">__cf_bm</td>
+              <td data-label="Proveedor">Cloudflare</td>
+              <td data-label="Tipo">Técnica necesaria</td>
+              <td data-label="Finalidad">Detección de bots, protección DDoS</td>
+              <td data-label="Duración">30 minutos</td>
+            </tr>
+            <tr>
+              <td data-label="Nombre">_vercel_no_cache</td>
+              <td data-label="Proveedor">Vercel</td>
+              <td data-label="Tipo">Técnica necesaria</td>
+              <td data-label="Finalidad">Control de caché en modo desarrollo</td>
+              <td data-label="Duración">Sesión</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <h2>Modificaciones</h2>
-      <p>
-        Si en el futuro se incorporan funcionalidades que requieran el uso de cookies, esta política
-        se actualizará para reflejar los cambios y se implementará el mecanismo de consentimiento
-        correspondiente conforme a la Guía AEPD 2023 y el Art. 22.2 LSSI-CE.
-      </p>
+        <p>
+          Ambas son técnicas y estrictamente necesarias. No requieren consentimiento previo
+          conforme al Art. 22.2 LSSI-CE y la Guía AEPD 2023.
+        </p>
 
-      <p>
-        <em>Última actualización: abril 2026. Conforme a la Guía AEPD 2023.</em>
-      </p>
+        <h3>Sin analytics ni publicidad</h3>
+        <p>
+          Este sitio no usa Google Analytics, Meta Pixel ni ningún sistema de seguimiento
+          publicitario. Si en el futuro se incorporase cualquier cookie no técnica, se actualizará
+          esta política y se implementará un mecanismo de consentimiento previo.
+        </p>
+
+        <h3>Cómo gestionar las cookies</h3>
+        <p>
+          Puedes bloquearlas o eliminarlas desde la configuración de tu navegador:{" "}
+          <a
+            href="https://support.google.com/chrome/answer/95647"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Chrome
+          </a>
+          {" · "}
+          <a
+            href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Firefox
+          </a>
+          {" · "}
+          <a
+            href="https://support.apple.com/es-es/guide/safari/sfri11471/mac"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Safari
+          </a>
+          .
+        </p>
+      </section>
+
+      {/* BLOQUE 3 — Tus derechos */}
+      <section aria-labelledby="ck-derechos">
+        <h2 id="ck-derechos">Tus derechos</h2>
+        <p>
+          En relación con el tratamiento de datos derivado de las cookies técnicas (IP, logs),
+          puedes ejercer tus derechos ARCO y adicionales del RGPD escribiendo a{" "}
+          <a href="mailto:contacto@alexendros.me">contacto@alexendros.me</a>. Ver la{" "}
+          <a href="/legal/privacidad">Política de Privacidad</a> para el detalle completo.
+        </p>
+      </section>
+
+      {/* BLOQUE 4 — Texto formal */}
+      <section aria-labelledby="ck-formal">
+        <h2 id="ck-formal">Texto formal</h2>
+        <p>
+          La presente Política de Cookies se elabora en cumplimiento del artículo 22.2 de la Ley
+          34/2002 (LSSI-CE), del Reglamento (UE) 2016/679 (RGPD) y de la Guía sobre el uso de las
+          cookies publicada por la AEPD en 2023.
+        </p>
+        <p>
+          Responsable del tratamiento: Alejandro Domingo Agustí, NIF 21002968N, Valencia, España.{" "}
+          <a href="mailto:contacto@alexendros.me">contacto@alexendros.me</a>.
+        </p>
+        <p>
+          <em>Última actualización: mayo de 2026.</em>
+        </p>
+      </section>
     </>
   );
 }
