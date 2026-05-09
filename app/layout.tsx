@@ -5,6 +5,7 @@ import type { Metadata, Viewport } from "next";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import { ParticleBg } from "@/components/particle-bg";
+import { Atmosphere } from "@/components/atmosphere";
 import { siteConfig } from "@/lib/site";
 import { personJsonLd, websiteJsonLd } from "@/lib/structured-data";
 
@@ -89,9 +90,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
+        <Atmosphere />
         <ParticleBg />
         <Nav />
-        <main id="main" className="flex-1">
+        <main id="main" className="flex-1 pb-28 md:pb-0">
           {children}
         </main>
         <Footer />

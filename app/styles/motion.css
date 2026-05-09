@@ -9,6 +9,15 @@
   }
 }
 
+@keyframes atm-drift {
+  from {
+    transform: translate(0, 0) scale(1);
+  }
+  to {
+    transform: translate(4%, 3%) scale(1.08);
+  }
+}
+
 @keyframes pulse-dot {
   0% {
     opacity: 0.8;
@@ -53,6 +62,12 @@
   .marquee-track {
     animation: none !important;
     transform: none !important;
+  }
+
+  .atm__haze,
+  .atm__spark,
+  .atm__dust {
+    animation: none !important;
   }
 
   body::before {

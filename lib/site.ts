@@ -14,16 +14,41 @@ export const siteConfig = {
     twitter: "https://x.com/alexendros",
   },
   nav: [
-    { label: "Inicio", href: "/" },
-    { label: "Bitácora", href: "/bitacora" },
-    { label: "Proyectos", href: "/proyectos" },
-    { label: "Autobiografía", href: "/autobiografia" },
-    { label: "Experiencia", href: "/experiencia" },
-    { label: "Contacto", href: "/contacto" },
+    { label: "(Auto)biografía", href: "#biografia" },
+    { label: "Misiones", href: "#misiones" },
+    { label: "Experiencias", href: "#experiencias" },
   ],
   legalNav: [
     { label: "Aviso legal", href: "/legal/aviso-legal" },
     { label: "Privacidad", href: "/legal/privacidad" },
     { label: "Cookies", href: "/legal/cookies" },
+  ],
+  contact: {
+    email: "contacto@alexendros.me",
+    telegram: { handle: "@alexendros", status: "preparacion" as const },
+    matrix: { handle: "@alexendros:matrix.org", status: "proximamente" as const },
+  },
+  referrals: [
+    {
+      key: "claude",
+      name: "Claude AI",
+      href: "https://claude.ai/referral/WXK5RBGz5Q",
+      tagline: "El asistente con el que construyo todo esto",
+      desc: "Si no lo estás usando ya, deberías. Enlace de referido.",
+    },
+    {
+      key: "proton",
+      name: "Proton",
+      href: "https://pr.tn/ref/J9V01ZFX",
+      tagline: "Mail · VPN · Drive cifrados end-to-end",
+      desc: "Alternativa real a Google/Microsoft. Un mes gratis con este enlace.",
+    },
+    {
+      key: "playlist",
+      name: "Playlist",
+      href: null as string | null,
+      tagline: "Tidal / YouTube · TBD",
+      desc: "Próximamente.",
+    },
   ],
 } as const;

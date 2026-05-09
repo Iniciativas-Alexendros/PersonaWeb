@@ -1,4 +1,12 @@
 {
+  "redirects": [
+    { "source": "/autobiografia", "destination": "/#biografia", "permanent": true },
+    { "source": "/proyectos", "destination": "/#misiones", "permanent": true },
+    { "source": "/experiencia", "destination": "/#experiencias", "permanent": true },
+    { "source": "/contacto", "destination": "/", "permanent": true },
+    { "source": "/bitacora", "destination": "/", "permanent": true },
+    { "source": "/uses", "destination": "/#experiencias", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)",
