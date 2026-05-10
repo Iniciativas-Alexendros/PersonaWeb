@@ -19,6 +19,7 @@ const geistMono = localFont({
   src: "../public/fonts/GeistMonoVF.woff2",
   variable: "--font-geist-mono",
   display: "swap",
+  preload: false,
 });
 
 // Vergina Imperial v0.2.2 · Inter weight 700/800 para hero h1.display.
@@ -28,7 +29,7 @@ const geistMono = localFont({
 const interDisplay = Inter({
   subsets: ["latin"],
   variable: "--font-display",
-  weight: ["700", "800", "900"],
+  weight: ["700", "800"],
   display: "swap",
 });
 

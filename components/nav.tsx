@@ -91,7 +91,7 @@ export function Nav() {
                     scrollToAnchor(item.href);
                     setActiveHash(item.href);
                   }}
-                  aria-current={isActive ? "true" : undefined}
+                  aria-current={isActive ? "page" : undefined}
                   className={`site-nav__link px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                     isActive
                       ? "site-nav__link--active bg-secondary text-foreground"
@@ -135,7 +135,7 @@ export function Nav() {
                         setTimeout(() => scrollToAnchor(item.href), 150);
                         setActiveHash(item.href);
                       }}
-                      aria-current={activeHash === item.href ? "true" : undefined}
+                      aria-current={activeHash === item.href ? "page" : undefined}
                       className={`flex min-h-[var(--tap-target-min)] items-center px-3 py-3 rounded-md text-sm font-medium transition-colors ${
                         activeHash === item.href
                           ? "bg-secondary text-foreground"

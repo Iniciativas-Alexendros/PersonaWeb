@@ -80,12 +80,12 @@ export function Footer() {
         {/* Afiliados */}
         <p className="mt-2 text-xs text-muted-foreground">
           Esta web incluye{" "}
-          <a
-            href="#experiencias"
+          <Link
+            href="/#experiencias"
             className="underline underline-offset-4 decoration-primary/60 hover:decoration-primary"
           >
             enlaces de afiliado
-          </a>
+          </Link>
           . Si contratas a través de ellos, puedo recibir una comisión sin coste extra para ti.
         </p>
       </div>
